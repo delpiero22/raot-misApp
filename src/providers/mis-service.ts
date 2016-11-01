@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
+import {DataTest} from "./../models/data-test"
+import {Observable} from "rxjs";
 
 /*
   Generated class for the MisService provider.
@@ -15,4 +17,10 @@ export class MisService {
     console.log('Hello MisService Provider');
   }
 
+  callTestData():  Observable<DataTest[]> {
+    return this.http
+      .post("http://www.raot.co.th/mobile_app/misData.php", "year=2540,zone=okok")
+      .map(res => res.json() as DataTest[])
+      .catch(err => [])
+  }
 }
