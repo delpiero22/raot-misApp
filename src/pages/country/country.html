@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>สรุปแผนและผล - ระดับประเทศ</ion-title>
+    <ion-title>ระดับประเทศ</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -17,17 +17,29 @@
 <ion-list>
   <ion-item>
     <ion-label>เลือกปีงบประมาณที่ต้องการ</ion-label>
-    <ion-select [(ngModel)]="year">
-      <ion-option value="2559">2559</ion-option>
+    <ion-select interface="action-sheet" [(ngModel)]="year" (ionchange)="onChange(carbrand)">
+        <ion-option value="2559">2559</ion-option>
       <ion-option value="2558">2558</ion-option>
+      <ion-option value="2557">2557</ion-option>
+      <ion-option value="2556">2556</ion-option>
     </ion-select>
   </ion-item>
-  <!--<ion-item *ngFor="#person of people">
-      <ion-avatar item-left>
-        <img src="{{person.picture.thumbnail}}">
-      </ion-avatar>
-      <h2>{{person.name.first}} {{person.name.last}}</h2>
-      <p>{{person.email}}</p>
-    </ion-item>-->
 </ion-list>
+
+<!--
+<ion-card class="cards-list-demo" *ngFor="let header of listHeader">
+  <ion-card-header>
+      {{header}}
+    </ion-card-header>
+  <ion-list>
+
+    <ion-item>
+      {{datas[0].year}}
+    </ion-item>
+     <ion-item>
+      {{datas[1].year}}
+    </ion-item>
+  </ion-list>
+</ion-card>
+-->
 </ion-content>

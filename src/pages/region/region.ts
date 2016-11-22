@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
+import {DataTest} from "./../../models/data-test";
+import {MisService} from "./../../providers/mis-service"
 /*
   Generated class for the Region page.
 
@@ -12,11 +14,27 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'region.html'
 })
 export class RegionPage {
+// export class RegionPage extends OnInit{
 
-  constructor(public navCtrl: NavController) {}
+  // constructor(public navCtrl: NavController,private mis: MisService) {
+  //   super();
+  // }
 
-  ionViewDidLoad() {
-    console.log('Hello Region Page');
-  }
+  // ionViewDidLoad() {
+  //   console.log('Hello Region Page');
+  // }
 
+
+  // ngOnInit(){
+  //   this.mis.callTestData()
+  //           .subscribe(
+  //             data => {
+  //               const lineOne = data[0];
+  //               const lineTwo = data[1];
+  //             },
+  //             error => {},
+  //             () => {}
+  //           );
+            
+  // }
 }

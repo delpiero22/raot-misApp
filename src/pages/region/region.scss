@@ -1,5 +1,4 @@
-page-region {
-.ion-item{
-    font-size: 12px;
-}
+page-region{}
+ion-card.cards-list-demo ion-card-header {
+  color: map-get($colors, primary);
 }

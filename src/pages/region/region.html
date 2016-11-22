@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>สรุปแผนและผล - ระดับเขต</ion-title>
+    <ion-title>ระดับเขต</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -20,14 +20,15 @@
     <ion-select [(ngModel)]="year">
       <ion-option value="2559">2559</ion-option>
       <ion-option value="2558">2558</ion-option>
+      <ion-option value="2557">2557</ion-option>
+      <ion-option value="2556">2556</ion-option>
     </ion-select>
   </ion-item>
   <ion-item>
     <ion-label>เลือกเขต</ion-label>
     <ion-select [(ngModel)]="zone">
       <ion-option value="149">กยท.เขตภาคเหนือ</ion-option>
-      <ion-option value="150">กยท.เขตภาคตะวันออกเฉียงเหนือตอนบน
-</ion-option>
+      <ion-option value="150">กยท.เขตภาคตะวันออกเฉียงเหนือตอนบน</ion-option>
       <ion-option value="151">กยท.เขตภาคตะวันออกเฉียงเหนือตอนล่าง</ion-option>
       <ion-option value="152">กยท.เขตภาคภาคกลางและภาคตะวันออก</ion-option>
       <ion-option value="153">กยท.เขตภาคใต้ตอนบน</ion-option>
@@ -37,7 +38,7 @@
   </ion-item>
 </ion-list>
 
-<ion-card>
+<ion-card class="cards-list-demo">
   <ion-card-header>
       รับคำขอ
     </ion-card-header>
@@ -50,20 +51,7 @@
     </ion-item>
   </ion-list>
 </ion-card>
-<ion-card>
-  <ion-card-header>
-      รับคำขอ
-    </ion-card-header>
-  <ion-list>
-    <ion-item>
-      แผนการดำเนินการ
-    </ion-item>
-    <ion-item>
-      ผลการดำเนินการ
-    </ion-item>
-  </ion-list>
-</ion-card>
-<ion-card>
+<ion-card class="cards-list-demo">
   <ion-card-header>
       อนุมัติ
     </ion-card-header>
@@ -76,7 +64,7 @@
     </ion-item>
   </ion-list>
 </ion-card>
-<ion-card>
+<ion-card class="cards-list-demo">
   <ion-card-header>
       โค่น
     </ion-card-header>
@@ -89,7 +77,7 @@
     </ion-item>
   </ion-list>
 </ion-card>
-<ion-card>
+<ion-card class="cards-list-demo">
   <ion-card-header>
       ปลูกแทน
     </ion-card-header>
@@ -102,7 +90,7 @@
     </ion-item>
   </ion-list>
 </ion-card>
-<ion-card>
+<ion-card class="cards-list-demo">
   <ion-card-header>
       พ้นการปลูกแทน
     </ion-card-header>
@@ -115,7 +103,7 @@
     </ion-item>
   </ion-list>
 </ion-card>
-<ion-card>
+<ion-card class="cards-list-demo">
   <ion-card-header>
       จ่ายเงินสงเคราะห์
     </ion-card-header>
@@ -126,6 +114,22 @@
     <ion-item>
       ผลการดำเนินการ
     </ion-item>
+  </ion-list>
+</ion-card>
+<ion-card class="cards-list-demo">
+  <ion-card-header>
+      ทดสอบรูปแบบ
+    </ion-card-header>
+  <ion-list>
+      <button ion-item>
+        <ion-icon name='cart' item-left></ion-icon>
+        สอบถาม
+      </button>
+
+      <button ion-item>
+        <ion-icon name='medical' item-left></ion-icon>
+        ข้อมูลเพิ่มเติม
+      </button>
   </ion-list>
 </ion-card>
 </ion-content>
